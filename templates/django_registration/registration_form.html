@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+<h1>Registre here</h1>
+<form method="post">
+	{% csrf_token %}
+	<p><label for="id_username">Username:</label>
+      {{form.username}}</p>
+      <p><label for="id_email">Email:</label>
+          {{form.email}}</p>
+       <p>
+	      <label for="id_password1">Password:</label>
+	      {{form.password1}}	      
+	    </p>
+    	<p>
+      <label for="id_password2">Password confirmation:</label>
+      {{form.password2}}      
+    </p>
+    <input type="submit" class="btn btn-primary btn-lg w-100" id="submit" value="Create Account">
+</form>
+<div class="text-center">
+      <a class="small" href=""#>Already have an account? Login!</a>
+   </div>
+   <hr>
+   <div class="text-center">
+      <a class="small" href="#"> Forgot password ?</a>
+   </div>
+</body>
+</html>
